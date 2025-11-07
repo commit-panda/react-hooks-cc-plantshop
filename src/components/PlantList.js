@@ -1,6 +1,6 @@
 import React from "react";
 import PlantCard from "./PlantCard";
-import data from "../db.json";
+import data from "db.json";
 
 function PlantList({plants = [], searchItem = ""}) {
   // console.log(plants)

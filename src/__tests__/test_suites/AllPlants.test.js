@@ -3,6 +3,8 @@ import { render } from '@testing-library/react';
 import App from '../../components/App';
 import '@testing-library/jest-dom';
 
+console.log("setFetchResponse:", typeof global.setFetchResponse);
+
 describe('1st Deliverable', () => {
   test('displays all plants on startup', async () => {
     global.setFetchResponse(global.basePlants)
