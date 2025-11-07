@@ -5,7 +5,7 @@ import data from "../db.json";
 function PlantList({plants = [], searchItem = ""}) {
   // console.log(plants)
 
-  const filteredPlants = data.plants.filter(plant =>
+  const filteredPlants = plants.filter(plant =>
     plant.name.toLowerCase().includes(searchItem.toLowerCase())
   );
 
