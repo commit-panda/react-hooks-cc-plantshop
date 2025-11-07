@@ -2,7 +2,7 @@ import React from "react";
 import PlantCard from "./PlantCard";
 import data from "../db.json";
 
-function PlantList({searchItem = ""}) {
+function PlantList({plants = [], searchItem = ""}) {
   // console.log(plants)
 
   const filteredPlants = data.plants.filter(plant =>
