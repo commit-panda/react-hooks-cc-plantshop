@@ -12,7 +12,7 @@ function PlantPage({plants}) {
     <main>
       <NewPlantForm />
       <Search searchItem = {searchItem} onSearchChange={setSearchItem}/>
-      <PlantList searchItem = {searchItem}/>
+      <PlantList plants = {plants} searchItem = {searchItem}/>
     </main>
   );
 }
