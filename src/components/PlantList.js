@@ -1,17 +1,17 @@
 import React from "react";
 import PlantCard from "./PlantCard";
-import plants from "../db.json";
+import db from "../db.json";
 
 function PlantList() {
+  // console.log(plants)
   return (
-    console.log(plants),
-    <ul className="cards">
-      { plants.map( plant => (
-       
-          <PlantCard plant = {plant}/>
-      )
-      )}
-    </ul>
+      <ul className="cards">
+        { db.plants.map( plant => (
+        
+            <PlantCard plant = {plant}/>
+        )
+        )}
+      </ul>
   );
 }
 
