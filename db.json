@@ -41,24 +41,6 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
-    },
-    {
-      "name": "Monseratti delicioso",
-      "image": "https://hips.hearstapps.com/hmg-prod/images/colorful-exotic-caladium-plants-in-flower-pots-royalty-free-image-1723738296.jpg?crop=1.00xw:0.752xh;0,0.0577xh&resize=1800:*",
-      "price": 12,
-      "id": 8
-    },
-    {
-      "name": "coco",
-      "image": "https://hips.hearstapps.com/hmg-prod/images/heliconia-psittacorum-parrot-heliconia-royalty-free-image-1723733178.jpg?crop=0.99588xw:1xh;center,top",
-      "price": 15,
-      "id": 9
-    },
-    {
-      "name": "Dwarf Palmetto",
-      "image": "https://hips.hearstapps.com/hmg-prod/images/sabal-minor-14-800x1000-66be1d9f07b4c.jpeg?crop=0.835xw:1.00xh;0.0578xw,0",
-      "price": 15,
-      "id": 10
     }
   ]
 }
