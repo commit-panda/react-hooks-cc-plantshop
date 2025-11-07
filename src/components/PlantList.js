@@ -1,12 +1,12 @@
 import React from "react";
 import PlantCard from "./PlantCard";
-import db from "../db.json";
+import data from "../db.json";
 
 function PlantList() {
   // console.log(plants)
   return (
       <ul className="cards">
-        { db.plants.map( plant => (
+        { data.plants.map( plant => (
         
             <PlantCard plant = {plant}/>
         )
