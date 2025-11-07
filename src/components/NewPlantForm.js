@@ -1,6 +1,13 @@
 import React from "react";
+import { useState } from 'react'
 
 function NewPlantForm() {
+
+  const [plantName, setPlantName] = useState('');
+  const [plantImage, setPlantImage] = useState('');
+  const [plantPrice, setplantPrice] = useState('');
+
+
   return (
     <div className="new-plant-form">
       <h2>New Plant</h2>
