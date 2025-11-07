@@ -2,16 +2,19 @@ import React from "react";
 import PlantCard from "./PlantCard";
 import data from "../db.json";
 
-function PlantList() {
+function PlantList({searchItem = ""}) {
   // console.log(plants)
+
+  const filteredPlants = data.plants.filter(plant =>
+    plant.name.toLowerCase().includes(searchItem.toLowerCase())
+  );
+
   return (
       <ul className="cards">
-        { data.plants.map( plant => (
-        
-            <PlantCard plant = {plant}/>
-        )
-        )}
-      </ul>
+      {filteredPlants.map(plant => (
+        <PlantCard key={plant.id} plant={plant} />
+      ))}
+    </ul>
   );
 }
 

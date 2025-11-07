@@ -15,7 +15,7 @@ function PlantCard({plant}) {
         <button className="primary" onClick={() => setInStock(false)}>
           In Stock</button>
       ) : (
-        <button onClick={() => setInStock(false)}>Out of Stock</button>
+        <button onClick={() => setInStock(true)}>Out of Stock</button>
       )}
     </li>
   );

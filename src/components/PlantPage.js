@@ -1,10 +1,10 @@
-import React, { use } from "react";
+import React from "react";
 import NewPlantForm from "./NewPlantForm";
 import PlantList from "./PlantList";
 import Search from "./Search";
 import { useState } from 'react'
 
-function PlantPage() {
+function PlantPage({plants}) {
   
   const [searchItem, setSearchItem] = useState('');
 
@@ -12,7 +12,7 @@ function PlantPage() {
     <main>
       <NewPlantForm />
       <Search searchItem = {searchItem} onSearchChange={setSearchItem}/>
-      <PlantList />
+      <PlantList searchItem = {searchItem}/>
     </main>
   );
 }
