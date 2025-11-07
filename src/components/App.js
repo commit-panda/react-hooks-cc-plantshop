@@ -12,10 +12,14 @@ function App() {
       .then(data => setPlants(data));
   }, []);
 
+  const handleAddPlant = (newPlant) => {
+    setPlants([...plants, newPlant]);
+  };
+
   return (
     <div className="app">
       <Header />
-      <PlantPage plants = {plants}/>
+      <PlantPage plants = {plants} onAddPlant={handleAddPlant}/>
     </div>
   );
 }
